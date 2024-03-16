@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="viewPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewController">
+   <children>
+      <TableView id="tablePane" fx:id="tablePane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cyan;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn id="idCol" fx:id="idCol" prefWidth="150.0" text="ID" />
+            <TableColumn id="nameCol" fx:id="nameCol" minWidth="0.0" prefWidth="150.0" text="NAME" />
+            <TableColumn id="startCol" fx:id="startCol" prefWidth="150.0" text="START DATE" />
+            <TableColumn id="endCol" fx:id="endCol" minWidth="0.0" prefWidth="150.0" text="END DATE" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
